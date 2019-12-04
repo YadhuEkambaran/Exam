@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_second_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Welcome Yadhu..."
+        android:fontFamily="sans-serif-black"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_qualification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_second_welcome">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_graduated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_graduated"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginEnd="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_ungraduated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/label_ungraduated"/>
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/sp_second_course"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_qualification"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_second_course_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_second_course"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Course fee : 1400"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-black"
+        android:textSize="16sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_second_course_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_second_course_fee"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Course fee : 1400"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-black"
+        android:textSize="16sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_second_add_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_add_course"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_curved_button"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_second_course_hours"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_second_accommodation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Need Accommodation"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/btn_second_add_course"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.20"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_second_medical_insurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Need Medical insurance"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_second_add_course"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.30"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_second_total_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Total Hours : 21"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintVertical_bias="0.90"
+        app:layout_constraintTop_toBottomOf="@+id/cb_second_medical_insurance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_center"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_second_total_fees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Total Fees : 122222"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintVertical_bias="0.90"
+        app:layout_constraintTop_toBottomOf="@+id/cb_second_medical_insurance"
+        app:layout_constraintStart_toEndOf="@+id/gl_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50"
+        android:id="@+id/gl_center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

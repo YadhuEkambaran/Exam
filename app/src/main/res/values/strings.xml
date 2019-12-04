@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Exam</string>
+    <string name="hint_user_name">Enter the username</string>
+    <string name="hint_password">Enter the password</string>
+    <string name="hint_student_name">Enter student name</string>
+    <string name="label_login">Login</string>
+    <string name="label_clear">Clear</string>
+    <string name="label_graduated">Graduated</string>
+    <string name="label_ungraduated">Ungraduated</string>
+    <string name="label_add_course">Add course</string>
+</resources>
