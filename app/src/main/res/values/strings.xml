@@ -8,4 +8,5 @@
     <string name="label_graduated">Graduated</string>
     <string name="label_ungraduated">Ungraduated</string>
     <string name="label_add_course">Add course</string>
+    <string name="login">Login</string>
 </resources>
